@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<title>Registration</title>
+		<style type="text/css">
+			h1
+			{
+				text-decoration:all;
+				color: #FA0413;
+			}
+			.c1
+			{
+				background-color: #F8FABA;
+			}
+			.c2
+			{
+				background-color: #93F9DB;
+			}
+			.c3
+			{
+				background-color: #64FA81;
+			}
+			.l1
+			{
+				color: #047FFA;
+				background-color:white;
+			}
+
+
+		</style>
+		
+	</head>
+
+	<body  bgcolor="#BBF7BC">
+		<center><h1><u>REGISTRATION FORM</u></h1></center>
+		<div>
+			<fieldset class="c1">
+			<legend align="center" class="l1"><h2>STUDENT DETAILS</h2></legend>
+			<table cellspacing="10px">
+				
+				<tr>
+					<td>
+						<label for="name">Name</label>
+					</td>
+					<td>
+						<input type="text" name="name" id="name" />
+					</td>
+				</tr>
+				<tr>
+					<td><label for="roll-num">Roll Number</label></td>
+					<td><input type="number" name="roll" id="roll-num" /></td>
+				</tr>
+				<tr>
+					<td>
+						<label for="gender">Gender</label>
+					</td>
+					<td id="gender">
+						<label for="male">Male</label>
+						<input type="radio" name="gender" value="Male" id="male" />
+						<label for="female">Female</label>
+						<input id="female" type="radio" name="gender" value="Female" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="dob">DOB</label>
+					</td>
+					<td>
+						<input type="date" name="DOB" id="dob" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="pwd">PWD</label>
+					</td>
+					<td id="pwd">
+						<label for="yes">YES</label>
+						<input type="radio" name="PWD" id="yes" />
+						<label for="no">NO</label>
+						<input type="radio" name="PWD" id="no" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="category">Category</label>
+					</td>
+					<td>
+						<select name="category" id="category">
+							<option value="General">General</option>
+							<option value="OBC">OBC</option>
+							<option value="SC">SC</option>
+							<option value="ST">ST</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="Address">Address</label><br /></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<textarea placeholder="Address Here" id="Address" cols="50" rows="5"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="pincode">PIN Code</label></td>
+					<td><input type="number" id="pincode" /></td>
+				</tr>
+				<tr>
+					<td><label for="mob-std">Mobile number</label></td>
+					<td><input type="number" id="mob-std" /></td>
+				</tr>
+				<tr>
+					<td><label for="mob-grd">Alternate number</label></td>
+					<td><input type="number" id="mob-grd" /></td>
+				</tr>
+			</table>
+		</fieldset>
+		</div>
+
+
+		<br /><br />
+
+		<div>
+			<fieldset class="c2">
+			<legend class="l1" align="center" ><h2>ACADEMIC INFORMATION</h2></legend>
+			<table cellspacing="10px">
+				<tr>
+					<td><label for="course">Course</label></td>
+					<td>
+						<select id="course"
+							><option value="B.Tech">B.Tech</option>
+							<option value="B.Arch">B.Arch</option>
+							<option value="I.MSC">I.Msc</option></select
+						>
+					</td>
+				</tr>
+				<tr>
+					<td><label for="branch">Branch</label></td>
+					<td><input type="text" id="branch" /></td>
+				</tr>
+				<tr>
+					<td><label for="sem">Semester</label></td>
+					<td>
+						<input type="number" id="sem" />
+					</td>
+				</tr>
+				<tr>
+					<td><label for="air">All India Rank</label></td>
+					<td><input type="number" id="air" /></td>
+				</tr>
+				<tr>
+					<td><label for="cir">Category Rank</label></td>
+					<td><input type="number" id="cir" /></td>
+				</tr>
+				<tr>
+					<td><label for="cgpa">CGPA</label></td>
+					<td><input type="number" id="cgpa" /></td>
+				</tr>
+				
+				<tr>
+					<td>
+						<label for="acc">Hostel Accomodation</label>
+					</td>
+					<td id="acc">
+						<label for="yes">YES</label>
+						<input type="radio" name="acc" id="yes" />
+						<label for="no">NO</label>
+						<input type="radio" name="acc" id="no" />
+					</td>
+				</tr>
+				<tr>
+					<td><label for="hos">Name of Hostel</label></td>
+					<td><input type="text" id="hos" /></td>
+				</tr>
+				<tr>
+					<td><label for="room-num">Room Number</label></td>
+					<td><input type="text" id="room-num" /></td>
+				</tr>
+			</table>
+		</fieldset>
+		</div>
+
+
+		<br />
+		<div>
+			<fieldset class="c3">
+			<legend class="l1" align="center"><h2>ACCOUNT DETAILS</h2></legend>
+			<table cellspacing="10px">
+				<tr>
+					<td><label for="acc-name">Account Holder Name</label></td>
+					<td><input type="text" id="acc-name" /></td>
+				</tr>
+				<tr>
+					<td><label for="acc-num">Account Number</label></td>
+					<td><input type="number" id="acc-num" /></td>
+				</tr>
+				<tr>
+					<td><label for="ifsc">IFSC Code</label></td>
+					<td><input type="text" id="ifsc" /></td>
+				</tr>
+				<tr>
+					<td><label for="bank-name">Bank Name</label></td>
+					<td><input type="text" id="bank-name" /></td>
+				</tr>
+				<tr>
+					<td><label for="bank-branch">Bank Branch</label></td>
+					<td><input type="text" id="bank-branch" /></td>
+				</tr>
+			</table>
+		</fieldset>
+		</div>
+	</body>
+</html>
